@@ -2,9 +2,15 @@
 
 [ext_resource type="Script" uid="uid://c3ubxpp10k6x6" path="res://scripts/player.gd" id="1_8afob"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ksju7"]
+
 [node name="Player" type="CharacterBody2D" unique_id=7291571]
 script = ExtResource("1_8afob")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=245754994]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=229478255]
+shape = SubResource("RectangleShape2D_ksju7")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=165572175]
+zoom = Vector2(-1, -1)
